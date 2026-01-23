@@ -1,0 +1,496 @@
+# WanderingTrader Configuration
+# Custom Wandering Trader trades for worlds without Nether access
+# All prices are in DIAMONDS instead of emeralds
+
+settings:
+  # Minimum number of trades the trader will have
+  min-trades: 5
+  # Maximum number of trades the trader will have
+  max-trades: 8
+  # If true, completely replaces vanilla trades. If false, adds to them.
+  replace-all-trades: true
+
+# Trade definitions
+# weight: Higher weight = more likely to appear (default: 10)
+# max-uses: How many times this trade can be used before it locks
+trades:
+
+  # ==========================================
+  # ESSENTIAL BREWING & PROGRESSION ITEMS
+  # ==========================================
+
+  blaze_rod:
+    enabled: true
+    result:
+      material: BLAZE_ROD
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 8
+    max-uses: 3
+    weight: 15
+    
+  blaze_powder:
+    enabled: true
+    result:
+      material: BLAZE_POWDER
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 5
+    max-uses: 5
+    weight: 12
+
+  nether_wart:
+    enabled: true
+    result:
+      material: NETHER_WART
+      amount: 4
+    cost:
+      material: DIAMOND
+      amount: 4
+    max-uses: 6
+    weight: 15
+
+  # ==========================================
+  # RARE ITEMS
+  # ==========================================
+
+  wither_skeleton_skull:
+    enabled: true
+    result:
+      material: WITHER_SKELETON_SKULL
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 16
+    max-uses: 1
+    weight: 3
+
+  ghast_tear:
+    enabled: true
+    result:
+      material: GHAST_TEAR
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 10
+    max-uses: 2
+    weight: 5
+
+  end_rod:
+    enabled: true
+    result:
+      material: END_ROD
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 6
+    max-uses: 12
+    weight: 8
+
+  # ==========================================
+  # POTION INGREDIENTS
+  # ==========================================
+
+  magma_cream:
+    enabled: true
+    result:
+      material: MAGMA_CREAM
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 1
+    max-uses: 4
+    weight: 10
+
+  glowstone_dust:
+    enabled: true
+    result:
+      material: GLOWSTONE_DUST
+      amount: 8
+    cost:
+      material: DIAMOND
+      amount: 1
+    max-uses: 6
+    weight: 12
+
+  # ==========================================
+  # BUILDING BLOCKS
+  # ==========================================
+
+  netherrack:
+    enabled: true
+    result:
+      material: NETHERRACK
+      amount: 16
+    cost:
+      material: DIAMOND
+      amount: 4
+    max-uses: 8
+    weight: 15
+
+  soul_sand:
+    enabled: true
+    result:
+      material: SOUL_SAND
+      amount: 8
+    cost:
+      material: DIAMOND
+      amount: 3
+    max-uses: 6
+    weight: 12
+
+  soul_soil:
+    enabled: true
+    result:
+      material: SOUL_SOIL
+      amount: 8
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 10
+
+  glowstone:
+    enabled: true
+    result:
+      material: GLOWSTONE
+      amount: 4
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 12
+
+  shroomlight:
+    enabled: true
+    result:
+      material: SHROOMLIGHT
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 3
+    max-uses: 4
+    weight: 8
+
+  nether_quartz:
+    enabled: true
+    result:
+      material: QUARTZ
+      amount: 16
+    cost:
+      material: DIAMOND
+      amount: 5
+    max-uses: 8
+    weight: 12
+
+  quartz_block:
+    enabled: true
+    result:
+      material: QUARTZ_BLOCK
+      amount: 8
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 10
+
+  # ==========================================
+  # NETHER VEGETATION
+  # ==========================================
+
+  crimson_nylium:
+    enabled: true
+    result:
+      material: CRIMSON_NYLIUM
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 12
+    max-uses: 4
+    weight: 8
+
+  warped_nylium:
+    enabled: true
+    result:
+      material: WARPED_NYLIUM
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 12
+    max-uses: 4
+    weight: 8
+
+  crimson_fungus:
+    enabled: true
+    result:
+      material: CRIMSON_FUNGUS
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 5
+    weight: 10
+
+  warped_fungus:
+    enabled: true
+    result:
+      material: WARPED_FUNGUS
+      amount: 2
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 5
+    weight: 10
+
+  crimson_stem:
+    enabled: true
+    result:
+      material: CRIMSON_STEM
+      amount: 8
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 10
+
+  warped_stem:
+    enabled: true
+    result:
+      material: WARPED_STEM
+      amount: 8
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 10
+
+  # ==========================================
+  # UTILITY ITEMS
+  # ==========================================
+
+  lava_bucket:
+    enabled: true
+    result:
+      material: LAVA_BUCKET
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 1
+    max-uses: 4
+    weight: 10
+
+  golden_boots_worn:
+    enabled: true
+    result:
+      material: GOLDEN_BOOTS
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 1
+    max-uses: 3
+    weight: 6
+
+  # ==========================================
+  # ARMOR TRIMS (Nether-exclusive)
+  # ==========================================
+
+  snout_armor_trim:
+    enabled: true
+    result:
+      material: SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 42
+    max-uses: 2
+    weight: 5
+
+  rib_armor_trim:
+    enabled: true
+    result:
+      material: RIB_ARMOR_TRIM_SMITHING_TEMPLATE
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 42
+    max-uses: 2
+    weight: 5
+
+  # ==========================================
+  # SMITHING TEMPLATES
+  # ==========================================
+
+  netherite_upgrade:
+    enabled: true
+    result:
+      material: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 64
+    max-uses: 2
+    weight: 4
+
+  # ==========================================
+  # ENCHANTED BOOKS (Nether-exclusive enchantments)
+  # ==========================================
+  # Note: These require custom enchantment handling
+  # which is added via EnchantedBookTrade class
+
+  # Soul Speed I
+  soul_speed_1:
+    enabled: true
+    result:
+      material: ENCHANTED_BOOK
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 6
+    enchantments:
+      SOUL_SPEED: 1
+    max-uses: 2
+    weight: 6
+
+  # Soul Speed II
+  soul_speed_2:
+    enabled: true
+    result:
+      material: ENCHANTED_BOOK
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 10
+    enchantments:
+      SOUL_SPEED: 2
+    max-uses: 2
+    weight: 4
+
+  # Soul Speed III
+  soul_speed_3:
+    enabled: true
+    result:
+      material: ENCHANTED_BOOK
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 14
+    enchantments:
+      SOUL_SPEED: 3
+    max-uses: 1
+    weight: 2
+
+  # ==========================================
+  # ADDITIONAL NETHER BLOCKS
+  # ==========================================
+
+  blackstone:
+    enabled: true
+    result:
+      material: BLACKSTONE
+      amount: 16
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 10
+
+  gilded_blackstone:
+    enabled: true
+    result:
+      material: GILDED_BLACKSTONE
+      amount: 4
+    cost:
+      material: DIAMOND
+      amount: 4
+    max-uses: 4
+    weight: 6
+
+  basalt:
+    enabled: true
+    result:
+      material: BASALT
+      amount: 16
+    cost:
+      material: DIAMOND
+      amount: 1
+    max-uses: 8
+    weight: 12
+
+  crying_obsidian:
+    enabled: true
+    result:
+      material: CRYING_OBSIDIAN
+      amount: 4
+    cost:
+      material: DIAMOND
+      amount: 6
+    max-uses: 3
+    weight: 6
+
+  ancient_debris:
+    enabled: true
+    result:
+      material: ANCIENT_DEBRIS
+      amount: 1
+    cost:
+      material: DIAMOND
+      amount: 10
+    max-uses: 2
+    weight: 3
+
+  nether_brick:
+    enabled: true
+    result:
+      material: NETHER_BRICKS
+      amount: 16
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 10
+
+  red_nether_brick:
+    enabled: true
+    result:
+      material: RED_NETHER_BRICKS
+      amount: 8
+    cost:
+      material: DIAMOND
+      amount: 2
+    max-uses: 6
+    weight: 8
+
+  nether_gold_ore:
+    enabled: true
+    result:
+      material: NETHER_GOLD_ORE
+      amount: 4
+    cost:
+      material: DIAMOND
+      amount: 3
+    max-uses: 4
+    weight: 8
+
+  weeping_vines:
+    enabled: true
+    result:
+      material: WEEPING_VINES
+      amount: 4
+    cost:
+      material: DIAMOND
+      amount: 1
+    max-uses: 6
+    weight: 10
+
+  twisting_vines:
+    enabled: true
+    result:
+      material: TWISTING_VINES
+      amount: 4
+    cost:
+      material: DIAMOND
+      amount: 1
+    max-uses: 6
+    weight: 10
